@@ -48,6 +48,7 @@
         <span class="x-lprjelm x-lprjvar-user">wdgFormInputName</span>
         <span class="x-lprjelm x-lprjvar-pass">wdgFormInputPassword</span>
         <span class="x-lprjelm x-lprjvar-login">wdgFormBtnLogin</span>
+        <span class="x-lprjelm x-lprjvar-elementerror">lblLoginError</span>
     </span>
 
     <div class="login-wrapper">
@@ -58,24 +59,18 @@
                     <h5 class="hint">Use your Company ID to sign in or create one now</h5>
                 </section>
                 <div class="login-group">
-
-                    
-
                     <span class="x-lprjwdg-input " id="wdgFormInputName">
                         <span class="x-lprjelm x-lprjvar-loginForm">true</span>
                         <span class="x-lprjelm x-lprjvar-name">username</span>
                         <span class="x-lprjelm x-lprjvar-placeholder">user@domain</span>
-                        <span class="x-lprjelm x-lprjvar-helper"></span>
                     </span>
                     <span class="x-lprjwdg-input" id="wdgFormInputPassword">
                         <span class="x-lprjelm x-lprjvar-loginForm">true</span>
                         <span class="x-lprjelm x-lprjvar-type">password</span>
                         <span class="x-lprjelm x-lprjvar-name">password</span>
-                        <span class="x-lprjelm x-lprjvar-helper"></span>
+                        <span class="x-lprjelm x-lprjvar-passwordmd5">true</span>
                     </span>
-                    <div class="error active" style="display: none;">
-                        Invalid user name or password
-                    </div>
+                    <div class="error active" id="lblLoginError" style="display: none;"></div>
                     <a class="x-lprjwdg-button x-lprjvar-action-wdgFormLogin1_fireAction btn btn-primary" id="wdgFormBtnLogin">Login</a>
                     
                     
